@@ -3,6 +3,7 @@ import { Josefin_Sans, Source_Serif_Pro } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SideBar from '@/components/SideBar';
+import Inner from '@/components/Inner';
 
 const sourceSerifPro = Source_Serif_Pro({
   weight: ['200', '300', '400', '600', '700', '900'],
@@ -29,12 +30,14 @@ export default function RootLayout({
       lang='ko'
       className={`${sourceSerifPro.variable} ${josefinSans.variable}`}
     >
-      <body>
-        <Header />
-        <main>
-          <section>{children}</section>
-          <SideBar />
-        </main>
+      <body className='flex flex-col mx-auto bg-uBgColor '>
+        <Inner>
+          <Header />
+          <main className='bg-uWhite h-60'>
+            <section className='grow'>{children}</section>
+            <SideBar />
+          </main>
+        </Inner>
         <Footer />
       </body>
     </html>

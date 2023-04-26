@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         uPrimary: '#4A4870',
         uFontColor: '#586171',
+        uBgColor: '#F9F9FE',
         uBlue: '#4A4870',
         uRed: '#FF4B60',
         uWhite: '#FFFFFF',
