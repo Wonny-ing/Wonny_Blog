@@ -18,6 +18,7 @@ module.exports = {
         uTwitter: '#1DA1F1',
         uFacebook: '#165BEA',
         uInstargram: '#EF00A1',
+        uVelog: '#1EC997',
         uYellow: '#FAC469',
         uSkyBlue: '#65EBE7',
       },

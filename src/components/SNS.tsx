@@ -1,25 +1,60 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
+import { SiGithub, SiVelog, SiGmail } from 'react-icons/si';
 
 const LINKS = [
-  { icon: <AiFillGithub />, url: '', color: 'uFacebook' },
-  { icon: <AiFillLinkedin />, url: '', color: 'uInstargram' },
-  { icon: <AiFillYoutube />, url: '', color: 'white' },
+  {
+    icon: <SiGithub />,
+    url: '',
+    color: 'text-uPrimary',
+    bgColor: 'bg-uPrimary',
+    borderColor: 'border-uPrimary',
+  },
+  {
+    icon: <SiVelog />,
+    url: '',
+    color: 'text-uVelog',
+    bgColor: 'bg-uVelog',
+    borderColor: 'border-uVelog',
+  },
+  {
+    icon: <SiGmail />,
+    url: '',
+    color: 'text-uYellow',
+    bgColor: 'bg-uYellow',
+    borderColor: 'border-uYellow',
+  },
 ];
 
-export default function SNS() {
+type Props = {
+  textSize?: string;
+  type?: string;
+};
+
+export default function SNS({ textSize = 'text-3xl', type = '' }: Props) {
   return (
-    <ul className='flex gap-4 text-3xl'>
+    <ul className={`flex gap-4 ${textSize}`}>
       {LINKS.map((link, index) => (
         <a
           key={index}
           href={link.url}
           target='_blank'
           rel='noreferrer'
-          className={`text-${link.color}`}
+          className={`${
+            type === 'footerSection'
+              ? 'text-white border-2 ' + link.borderColor
+              : link.color
+          }`}
         >
-          {link.icon}
+          <span
+            className={`block ${
+              type === 'footerSection'
+                ? 'text-white border-2 border-uWhite p-4 ' + link.bgColor
+                : link.color
+            }`}
+          >
+            {link.icon}
+          </span>
         </a>
       ))}
     </ul>

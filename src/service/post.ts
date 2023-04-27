@@ -18,6 +18,11 @@ export type PostData = Post & {
   prev: Post | null;
 };
 
+export async function getLatestedPosts(): Promise<Post[]> {
+  return getAllPosts() //
+    .then((posts) => posts.slice(0, 3));
+}
+
 export const getAllPosts = cache(async () => {
   console.log('getAllPosts');
 

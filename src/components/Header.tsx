@@ -1,5 +1,5 @@
 import React from 'react';
-import Categories from './Categories';
+import HeaderNav from './HeaderNav';
 import Title from './Title';
 import SNS from './SNS';
 import { BiSearch } from 'react-icons/bi';
@@ -7,14 +7,16 @@ import { BiSearch } from 'react-icons/bi';
 export default function Header() {
   return (
     <header className='flex flex-col h-40'>
-      <div className='flex justify-between items-center py-20'>
+      <div className='flex justify-between items-center py-20 w-full'>
         <SNS />
         <Title />
-        <button className='flex justify-center items-center text-uWhite text-xl bg-uRed w-11 h-11 rounded-full shadow-sm'>
-          <BiSearch />
-        </button>
+        <div className='ml-14'>
+          <button className='flex justify-center items-center text-uWhite text-xl bg-uRed w-11 h-11 rounded-full shadow-sm'>
+            <BiSearch />
+          </button>
+        </div>
       </div>
-      <Categories />
+      <HeaderNav />
     </header>
   );
 }

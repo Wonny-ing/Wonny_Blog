@@ -33,7 +33,7 @@ export default function RootLayout({
       <body className='flex flex-col mx-auto bg-uBgColor '>
         <Inner>
           <Header />
-          <main className='bg-uWhite h-60'>
+          <main className='h-60'>
             <section className='grow'>{children}</section>
             <SideBar />
           </main>
