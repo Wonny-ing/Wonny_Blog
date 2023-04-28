@@ -15,12 +15,12 @@ export default function PostCard({ post: { title, date } }: Props) {
         width={300}
         height={200}
       /> */}
-      <div className='w-1/4 h-24 bg-slate-500 shadow-lg'></div>
+      <div className='w-1/4 h-22 bg-slate-500 shadow-lg'></div>
       <div className='flex flex-col justify-center gap-2 w-3/4'>
         <h3 className='text-lg font-bold'>
           <a
             href=''
-            className='group-hover:border-b-4 group-hover:border-uYellow	'
+            className='group-hover:border-b-4 group-hover:border-uYellow'
           >
             {title}
           </a>

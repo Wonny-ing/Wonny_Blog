@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NAV_LIST = [
+export const NAV_LIST = [
   { title: 'Home', subCategory: '' },
   { title: 'Post Styles', subCategory: '' },
   { title: '#Tag', subCategory: '' },
@@ -11,7 +11,7 @@ const NAV_LIST = [
 
 export default function HeaderNav() {
   return (
-    <ul className='m-auto flex items-center bg-white shadow-md p-4 w-[703px]'>
+    <ul className='mx-auto flex items-center bg-uWhite shadow-md p-4 w-[703px]'>
       {NAV_LIST.map((item, index) => (
         <li
           key={index}

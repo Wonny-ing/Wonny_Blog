@@ -1,8 +1,11 @@
-export default function Title() {
+type Props = {
+  textSize?: string;
+};
+export default function Title({ textSize = 'text-6xl' }: Props) {
   return (
-    <h1 className='text-6xl font-bold'>
+    <div className={`${textSize} font-bold`}>
       <span className='text-uRed'>W</span>
-      <span>onny Blog</span>
-    </h1>
+      <span>onny</span>
+    </div>
   );
 }

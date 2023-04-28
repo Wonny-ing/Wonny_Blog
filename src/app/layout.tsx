@@ -4,6 +4,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SideBar from '@/components/SideBar';
 import Inner from '@/components/Inner';
+import ContactMe from '@/components/ContactMe';
+import Nav from '@/components/Nav';
 
 const sourceSerifPro = Source_Serif_Pro({
   weight: ['200', '300', '400', '600', '700', '900'],
@@ -31,13 +33,15 @@ export default function RootLayout({
       className={`${sourceSerifPro.variable} ${josefinSans.variable}`}
     >
       <body className='flex flex-col mx-auto bg-uBgColor '>
+        <Nav />
         <Inner>
           <Header />
-          <main className='h-60'>
-            <section className='grow'>{children}</section>
+          <main className='flex gap-20 w-full'>
+            <section className='grow bg-yellow-200'>{children}</section>
             <SideBar />
           </main>
         </Inner>
+        <ContactMe />
         <Footer />
       </body>
     </html>

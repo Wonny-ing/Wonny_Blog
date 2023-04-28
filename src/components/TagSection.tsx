@@ -1,4 +1,5 @@
 import TagButton from './TagButton';
+import TitleRow from './TitleRow';
 
 const TAGS = [
   { title: 'lifestyle', color: 'text-uYellow' },
@@ -10,14 +11,9 @@ const TAGS = [
 
 export default function TagSection() {
   return (
-    <section className='my-4 w-1/4'>
-      <div className='flex items-center'>
-        <h2 className='text-3xl font-semibold my-10 w-2/5 text-uPrimary'>
-          Tag Cloud
-        </h2>
-        <div className='bg-uRed w-3/5 h-[3px]'></div>
-      </div>
-      <ul className='flex flex-wrap gap-4 w-full h-full'>
+    <section>
+      <TitleRow title='Tag Cloud' />
+      <ul className='flex flex-wrap gap-4 w-full'>
         {TAGS.map((tag, index) => (
           <TagButton key={index} tag={tag} />
         ))}
