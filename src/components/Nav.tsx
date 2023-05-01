@@ -23,7 +23,7 @@ export default function Nav() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-10 w-full py-3 bg-uWhite shadow-md transition-all duration-300 ${
-        scrollY >= 0 ? 'visibility' : 'invisible'
+        scrollY >= 300 ? 'visibility opacity-100' : 'invisible opacity-0'
       }`}
     >
       <Inner>
@@ -40,7 +40,6 @@ export default function Nav() {
                 </li>
               ))}
             </ul>
-            {scrollY}
           </div>
         </div>
       </Inner>
