@@ -1,12 +1,13 @@
-import React from 'react';
 import HeaderNav from './HeaderNav';
 import Title from './Title';
 import SNS from './SNS';
 import { BiSearch } from 'react-icons/bi';
+import Nav from './Nav';
 
 export default function Header() {
   return (
     <header className='flex flex-col mb-14'>
+      {/* <Nav /> */}
       <div className='flex justify-between items-center py-20 w-full'>
         <SNS />
         <h1 className='flex gap-2'>

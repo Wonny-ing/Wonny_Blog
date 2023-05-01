@@ -1,13 +1,7 @@
 import TagButton from './TagButton';
 import TitleRow from './TitleRow';
 
-const TAGS = [
-  { title: 'lifestyle', color: 'text-uYellow' },
-  { title: 'music', color: 'text-uVelog' },
-  { title: 'health', color: 'text-uFacebook' },
-  { title: 'travel', color: 'text-uTwitter' },
-  { title: 'Video', color: 'text-uInstargram' },
-];
+const TAGS = ['lifestyle', 'music', 'health', 'travel', 'Video'];
 
 export default function TagSection() {
   return (
