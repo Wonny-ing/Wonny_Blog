@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 import { SiGithub, SiVelog, SiGmail } from 'react-icons/si';
 
