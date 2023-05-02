@@ -17,9 +17,9 @@ export default function Footer() {
       <div className='text-center'>
         <h2 className='flex justify-center gap-2'>
           <Title />
-          <span className='text-6xl font-bold'>&apos;s Blog</span>
+          <span className='text-6xl font-bold'>&apos;s log</span>
         </h2>
-        <p className='p-10'>Published with WordPress & EstudioPatagon</p>
+        <p className='p-10'>Designed & Developed By Wonny</p>
       </div>
     </footer>
   );
