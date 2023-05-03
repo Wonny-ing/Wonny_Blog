@@ -3,7 +3,6 @@ import { Post, getAllPosts } from '@/service/post';
 import MainPostCard from './MainPostCard';
 import Paginate from './Paginate';
 import { useState } from 'react';
-import ReactPaginate from 'react-paginate';
 
 type Props = { posts: Post[] };
 

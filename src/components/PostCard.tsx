@@ -1,6 +1,7 @@
 import { Post } from '@/service/post';
 import formatDate from '@/utils/formatDate';
 import Image from 'next/image';
+import Underline from './Underline';
 
 type Props = { post: Post };
 
@@ -17,14 +18,9 @@ export default function PostCard({ post: { title, date, image } }: Props) {
         />
       </div>
       <div className='flex flex-col justify-center gap-2 w-4/5'>
-        <h3 className='text-lg font-bold'>
-          <a
-            href=''
-            className='group-hover:border-b-4 text-uPrimary group-hover:border-uYellow'
-          >
-            {title}
-          </a>
-        </h3>
+        <div className='text-uFontColor space-y-2'>
+          <Underline text={title} size='small' />
+        </div>
         <time className='text-uPrimary font-serif'>{formatDate(date)}</time>
       </div>
     </article>

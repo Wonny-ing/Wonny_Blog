@@ -10,6 +10,8 @@ import Footer from '@/components/Footer';
 import SideBar from '@/components/SideBar';
 import Inner from '@/components/Inner';
 import ContactMe from '@/components/ContactMe';
+import CarouselPostImage from '@/components/CarouselPostImage';
+import KV from '@/components/KV';
 
 const sourceSerifPro = Source_Serif_Pro({
   weight: ['200', '300', '400', '600', '700', '900'],
@@ -51,6 +53,7 @@ export default function RootLayout({
       <body className='flex flex-col mx-auto bg-uBgColor min-h-screen'>
         <Inner>
           <Header />
+          <KV />
           <main className='flex gap-20 w-full'>
             <section className='w-2/3'>{children}</section>
             <SideBar />

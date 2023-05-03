@@ -4,6 +4,7 @@ import { RiChat3Line } from 'react-icons/ri';
 import { AiOutlineLike } from 'react-icons/ai';
 import Image from 'next/image';
 import Button from './Button';
+import Underline from './Underline';
 type Props = { post: Post };
 
 export default function MainPostCard({
@@ -21,8 +22,10 @@ export default function MainPostCard({
             height={100}
           />
         </div>
-        <div className='w-4/5 flex flex-col gap-3'>
-          <h3 className='text-uPrimary text-4xl font-bold'>{title}</h3>
+        <div className='w-4/5 flex flex-col gap-3 '>
+          <div className='text-uFontColor space-y-2'>
+            <Underline text={title} />
+          </div>
           <div className='flex items-center gap-5 text-uFontColor font-serif'>
             <span>{date}</span>
             <div className='h-[2px] w-6 bg-uRed'></div>
