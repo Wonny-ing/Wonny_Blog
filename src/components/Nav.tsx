@@ -13,7 +13,7 @@ export default function Nav({ isShow }: Props) {
     <>
       {isShow && (
         <nav
-          className={`fixed top-0 left-0 right-0 z-10 w-full py-3 bg-uWhite shadow-md transition-all duration-300`}
+          className={`fixed top-0 left-0 right-0 z-20 w-full py-3 bg-uWhite shadow-md transition-all duration-300`}
         >
           <Inner>
             <div className='flex items-center justify-between'>

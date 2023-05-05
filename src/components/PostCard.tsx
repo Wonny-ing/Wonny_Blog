@@ -2,12 +2,18 @@ import { Post } from '@/service/post';
 import formatDate from '@/utils/formatDate';
 import Image from 'next/image';
 import Underline from './Underline';
+import Link from 'next/link';
 
 type Props = { post: Post };
 
-export default function PostCard({ post: { title, date, image } }: Props) {
+export default function PostCard({
+  post: { title, date, image, path },
+}: Props) {
   return (
-    <article className='group flex overflow-hidden gap-4 w-full h-full ease-in duration-300'>
+    <Link
+      href={`/posts/${path}`}
+      className='group flex overflow-hidden gap-4 w-full h-full ease-in duration-300'
+    >
       <div className='w-20 h-20 overflow-hidden border-2 border-uFontColor'>
         <Image
           className='object-cover w-full h-full border-2 border-uWhite'
@@ -23,6 +29,6 @@ export default function PostCard({ post: { title, date, image } }: Props) {
         </div>
         <time className='text-uPrimary font-serif'>{formatDate(date)}</time>
       </div>
-    </article>
+    </Link>
   );
 }

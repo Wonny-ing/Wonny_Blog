@@ -1,5 +1,4 @@
 import CarouselPostImage from './CarouselPostImage';
-
 export default function KV() {
   return (
     <section className='mb-14'>

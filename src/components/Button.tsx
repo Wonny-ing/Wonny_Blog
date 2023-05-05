@@ -11,6 +11,7 @@ type Props = {
   bgColor?: string;
   color?: string;
   isDisabled?: boolean;
+  hover?: string;
   children?: React.ReactNode;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
@@ -25,13 +26,14 @@ export default function Button({
   bgColor = 'bg-uPrimary',
   color = 'text-uWhite',
   isDisabled = false,
+  hover = '',
   children,
   onClick,
 }: Props) {
   return (
     <button
       type={type}
-      className={`${width} ${height} ${bgColor} ${color} ${padding}`}
+      className={`flex items-center justify-center ${width} ${height} ${bgColor} ${color} ${padding} ${borderRadius} ${hover}`}
     >
       {children}
     </button>

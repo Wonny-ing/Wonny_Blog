@@ -10,7 +10,6 @@ import Footer from '@/components/Footer';
 import SideBar from '@/components/SideBar';
 import Inner from '@/components/Inner';
 import ContactMe from '@/components/ContactMe';
-import CarouselPostImage from '@/components/CarouselPostImage';
 import KV from '@/components/KV';
 
 const sourceSerifPro = Source_Serif_Pro({

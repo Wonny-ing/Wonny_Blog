@@ -5,10 +5,11 @@ import { AiOutlineLike } from 'react-icons/ai';
 import Image from 'next/image';
 import Button from './Button';
 import Underline from './Underline';
+import Link from 'next/link';
 type Props = { post: Post };
 
 export default function MainPostCard({
-  post: { title, date, comments, likes, description, categories, image },
+  post: { title, date, comments, likes, description, categories, image, path },
 }: Props) {
   return (
     <article className='relative flex flex-col h-[500px] mb-10 p-12 bg-uWhite shadow-md'>
@@ -50,9 +51,9 @@ export default function MainPostCard({
           ))}
         </ul>
       </div>
-      <div className='absolute -bottom-5 self-center'>
+      <Link className='absolute -bottom-5 self-center' href={`/posts/${path}`}>
         <Button>Continue Reading</Button>
-      </div>
+      </Link>
     </article>
   );
 }
