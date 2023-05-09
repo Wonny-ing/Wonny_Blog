@@ -52,10 +52,11 @@ export default function RootLayout({
       <body className='flex flex-col mx-auto bg-uBgColor min-h-screen'>
         <Inner>
           <Header />
+          <div id='portal' className='w-full' />
           <KV />
           <main className='flex gap-20 w-full'>
-            <section className='w-2/3'>{children}</section>
-            <SideBar />
+            <section className='w-full'>{children}</section>
+            {/* <SideBar /> */}
           </main>
         </Inner>
         <ContactMe />

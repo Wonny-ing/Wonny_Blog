@@ -24,6 +24,13 @@ export async function getLatestedPosts(): Promise<Post[]> {
     .then((posts) => posts.slice(0, 3));
 }
 
+export async function getCategoryPosts(category: string): Promise<Post[]> {
+  return getAllPosts() //
+    .then((posts) =>
+      posts.filter((post) => post.categories.includes(category))
+    );
+}
+
 export const getAllPosts = cache(async () => {
   const filePath = path.join(process.cwd(), 'data', 'posts.json');
   return readFile(filePath, 'utf-8')
