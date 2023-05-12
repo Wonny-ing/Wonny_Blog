@@ -26,9 +26,9 @@ export default async function PostPage({ params: { slug } }: Props) {
   const { title, image, path, next, prev } = post;
   return (
     <>
-      <article className='shadow-xl overflow-hidden mb-28'>
+      <article className='shadow-xl overflow-hidden mb-28 w-full'>
         <div className='relative w-full h-[400px]'>
-          <Image className='object-cover' src={image} alt={title} fill />
+          <Image className='object-cover w-full' src={image} alt={title} fill />
         </div>
         <PostContent post={post} />
       </article>

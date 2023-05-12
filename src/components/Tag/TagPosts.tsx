@@ -1,7 +1,7 @@
 import { getCategoryPosts } from '@/service/post';
-import TagPostsGrid from './TagPostsGrid';
+import PostsGrid from '../PostsGrid';
 
 export default async function TagPosts() {
   const posts = await getCategoryPosts('lifestyle');
-  return <TagPostsGrid posts={posts} />;
+  return <PostsGrid posts={posts} />;
 }

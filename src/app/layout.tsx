@@ -5,7 +5,7 @@ import {
   Open_Sans,
   Hahmlet,
 } from 'next/font/google';
-import Header from '@/components/Header';
+import Header from '@/components/header/Header';
 import Footer from '@/components/Footer';
 import SideBar from '@/components/SideBar';
 import Inner from '@/components/Inner';
@@ -52,11 +52,11 @@ export default function RootLayout({
       <body className='flex flex-col mx-auto bg-uBgColor min-h-screen'>
         <Inner>
           <Header />
-          <div id='portal' className='w-full' />
+          {/* <div id='portal' className='w-full' /> */}
           <KV />
           <main className='flex gap-20 w-full'>
             <section className='w-full'>{children}</section>
-            {/* <SideBar /> */}
+            <SideBar />
           </main>
         </Inner>
         <ContactMe />

@@ -1,8 +1,8 @@
 'use client';
 
 import HeaderNav from './HeaderNav';
-import Title from './Title';
-import SNS from './SNS';
+import Title from '../Title';
+import SNS from '../SNS';
 import { BiSearch } from 'react-icons/bi';
 import Nav from './Nav';
 import { useInView } from 'framer-motion';

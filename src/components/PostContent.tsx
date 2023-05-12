@@ -11,9 +11,9 @@ type Props = {
 export default function PostContent({ post }: Props) {
   const { title, description, date, comments, likes, content } = post;
   return (
-    <section>
-      <div className='flex flex-col bg-uWhite p-12'>
-        <h3 className='text-uPrimary text-4xl font-bold text-center mb-12'>
+    <section className='w-full'>
+      <div className='flex flex-col bg-uWhite'>
+        <h3 className='text-uPrimary text-4xl font-bold text-center my-12'>
           {title}
         </h3>
         <div className='flex items-center gap-5 text-uFontColor font-serif justify-center mb-16'>

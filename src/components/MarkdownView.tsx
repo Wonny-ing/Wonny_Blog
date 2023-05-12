@@ -9,7 +9,7 @@ import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 export default function MarkdownView({ content }: { content: string }) {
   return (
     <ReactMarkdown
-      className='prose max-w-none'
+      className='prose p-12'
       remarkPlugins={[remarkGfm]}
       components={{
         code({ node, inline, className, children, ...props }) {
@@ -31,7 +31,7 @@ export default function MarkdownView({ content }: { content: string }) {
         },
         img: (image) => (
           <Image
-            className='w-full max-h-60 object-cover'
+            className='w-full object-cover'
             src={image.src || ''}
             alt={image.alt || ''}
             width={500}

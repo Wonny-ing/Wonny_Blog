@@ -1,8 +1,8 @@
 'use client';
 
 import { NAV_LIST } from './HeaderNav';
-import Inner from './Inner';
-import Title from './Title';
+import Inner from '../Inner';
+import Title from '../Title';
 
 type Props = {
   isShow: boolean;
