@@ -1,7 +1,7 @@
 import TagButton from './TagButton';
 import TitleRow from './TitleRow';
 
-const TAGS = ['lifestyle', 'music', 'health', 'travel', 'Video'];
+const TAGS = ['javaScript', 'css', 'react', 'redux', 'lodash'];
 
 export default function TagSection() {
   return (

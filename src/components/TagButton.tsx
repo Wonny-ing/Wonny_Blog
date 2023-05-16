@@ -3,19 +3,19 @@ type Props = {
 };
 
 const COLORS: Record<string, string> = {
-  lifestyle: 'text-uYellow',
-  music: 'text-uVelog',
-  health: 'text-uFacebook',
-  travel: 'text-uTwitter',
-  Video: 'text-uInstargram',
+  javaScript: 'text-uYellow',
+  css: 'text-uVelog',
+  react: 'text-uFacebook',
+  redux: 'text-uTwitter',
+  lodash: 'text-uInstargram',
 };
 
 const GROUP_HOVER_COLORS: Record<string, string> = {
-  lifestyle: 'group-hover:text-uYellow',
-  music: 'group-hover:text-uVelog',
-  health: 'group-hover:text-uFacebook',
-  travel: 'group-hover:text-uTwitter',
-  Video: 'group-hover:text-uInstargram',
+  javaScript: 'group-hover:text-uYellow',
+  css: 'group-hover:text-uVelog',
+  react: 'group-hover:text-uFacebook',
+  redux: 'group-hover:text-uTwitter',
+  lodash: 'group-hover:text-uInstargram',
 };
 
 export default function TagButton({ tag }: Props) {
